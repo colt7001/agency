@@ -1329,7 +1329,7 @@ body {
 
 .filter__card-item .filter__card-item-wrap::after {
   content: "";
-  display: none;
+  display: block;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
@@ -1337,7 +1337,7 @@ body {
   opacity: 0;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1357,9 +1357,9 @@ body {
 }
 
 .filter__card-item .filter__card-item-wrap .card-item-first-span {
-  -webkit-transform: translate(-500%);
-      -ms-transform: translate(-500%);
-          transform: translate(-500%);
+  -webkit-transform: translate(-1000%);
+      -ms-transform: translate(-1000%);
+          transform: translate(-1000%);
   margin-bottom: 10px;
 }
 
@@ -1943,7 +1943,7 @@ body {
   }
 
   .filter__card-item .filter__card-item-wrap::after {
-    height: 100px;
+    height: 75px;
     top: 70%;
     left: 0;
     opacity: 1;
