@@ -363,30 +363,30 @@ window.onload = function classBody(event) {
 
 
 // FILTER =======================================================
-// $(function () {
+$(function () {
 
 
-//     let filter = $("[data-filter]");
+    let filter = $("[data-filter]");
 
-//     filter.on("click", function (event) {
-//         event.preventDefault();
+    filter.on("click", function (event) {
+        event.preventDefault();
 
-//         let cat = $(this).data('filter');
+        let cat = $(this).data('filter');
 
-//         if (cat == 'all') {
-//             $("[data-cat]").removeClass("hide");
-//         } else {
-//             $("[data-cat]").each(function () {
+        if (cat == 'all') {
+            $("[data-cat]").removeClass("hide");
+        } else {
+            $("[data-cat]").each(function () {
 
-//                 let workCat = $(this).data('cat');
+                let workCat = $(this).data('cat');
 
-//                 if (workCat != cat) {
-//                     $(this).addClass('hide');
-//                 } else {
-//                     $(this).removeClass('hide');
-//                 }
+                if (workCat != cat) {
+                    $(this).addClass('hide');
+                } else {
+                    $(this).removeClass('hide');
+                }
 
-//             });
-//         }
-//     });
-// })
+            });
+        }
+    });
+})
