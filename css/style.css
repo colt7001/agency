@@ -542,6 +542,7 @@ body {
   width: 100%;
   min-height: 10px;
   height: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 .section__top {
@@ -2000,7 +2001,6 @@ body {
     overflow: hidden;
     height: 100vh;
     position: relative;
-    -webkit-overflow-scrolling: touch;
   }
 
   .header__burger {
@@ -2059,6 +2059,10 @@ body {
             transform: rotate(-45deg);
     bottom: 9px;
     background-color: #fff;
+  }
+
+  .header__burger.active {
+    -webkit-overflow-scrolling: touch;
   }
 
   .header__burger.active span {
