@@ -355,9 +355,9 @@ source {
   font-weight: 400;
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  -webkit-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  -webkit-transition: all 0.3s ease-in-out 0.05s;
+  -o-transition: all 0.3s ease-in-out 0.05s;
+  transition: all 0.3s ease-in-out 0.05s;
 }
 
 .footer__social {
@@ -1250,6 +1250,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .filter__nav {
@@ -1291,7 +1292,6 @@ body {
       -ms-flex: 0 0 31%;
           flex: 0 0 31%;
   min-height: 250px;
-  background-color: #c0c0c0;
   text-align: center;
   margin: 10px 8px;
   border-radius: 10px;
@@ -1382,7 +1382,17 @@ body {
 }
 
 .filter .hide {
-  display: none;
+  width: 0;
+  height: 0;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .reviews-slider {
@@ -1948,7 +1958,7 @@ body {
     -webkit-transform: translate(0);
         -ms-transform: translate(0);
             transform: translate(0);
-    margin-top: 170px;
+    padding-top: 170px;
   }
 
   .filter__card-item .filter__card-item-wrap span.card-item-second-span {
