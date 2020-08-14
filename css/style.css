@@ -542,7 +542,6 @@ body {
   width: 100%;
   min-height: 10px;
   height: 100%;
-  -webkit-overflow-scrolling: touch;
 }
 
 .section__top {
@@ -2426,5 +2425,12 @@ body {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .section ::i-block-chrome,
+  .section Class Name {
+    background-attachment: local;
   }
 }
