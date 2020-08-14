@@ -539,6 +539,8 @@ body {
   background-color: #f0f0f0;
   padding: 30px 0;
   background-attachment: fixed;
+  width: 100%;
+  height: auto;
 }
 
 .section__top {
@@ -1987,6 +1989,8 @@ body {
 
   body.lock {
     overflow: hidden;
+    height: 100vh;
+    position: relative;
   }
 
   .header__burger {
@@ -2208,6 +2212,10 @@ body {
     padding: 30px 10px 10px 10px;
   }
 
+  .quickstart a {
+    margin: 3px 0px 10px 0px;
+  }
+
   .filter__card-item {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
@@ -2236,6 +2244,10 @@ body {
 
   .contact-us textarea {
     margin-bottom: 10px;
+  }
+
+  .contact-us a {
+    margin: 3px 0px 10px 0px;
   }
 }
 
@@ -2275,6 +2287,12 @@ body {
 
 @media (max-width: 450px) {
   .rates__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+
+  .rates__item:nth-child(2) {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
